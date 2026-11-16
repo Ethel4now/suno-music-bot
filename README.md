@@ -1,2 +1,17 @@
-# suno-music-bot
-Suno music bot for deepseek hardness Tob bot
+# Suno 音乐创作 Bot
+
+一个 BotHarness 机器人，覆盖音乐创作全链路：写词 → 定曲风 → 调 Suno 出歌 → 下载归档 → 逐行歌词 LRC →（可选）动画 MV →（授权后）上传汽水音乐。
+
+- **写词**：按题材、受众、时长写可锁定的歌词；一次给 2 个版本供挑选，锁定后严格照词生成。
+- **定曲风**：英文 Style 提示（编制、人声、情绪、BPM、时长），给 2–3 个方向或按用户指定。
+- **Suno**：用用户自己的会员在浏览器生成，小批量出片、由用户选片；不用非官方 API。
+- **归档**：优先 WAV 母带，记录 clip id、时长、MD5，`STATUS.txt` 如实反映阶段。
+- **逐行歌词**：词级时间戳对齐锁定歌词，产出定稿 LRC，供卡拉OK与 MV 使用。
+- **MV（可选）**：分镜 + 参考图 + 逐镜生成 + ffmpeg 合成，不做静帧幻灯片。
+- **汽水音乐**：只在用户明确要求时上传；先过版权、元数据、封面、歌词、AI 声明检查。
+
+安装：在 DSH 的 Bot 市场粘贴本仓库地址，安装后按需授权工作区与浏览器。安装本身不会授予文件权限，也不会自动开始生成或上传。
+
+必读 [SOUL.md](SOUL.md)（自包含，已涵盖歌词/曲风/Suno/LRC/MV/上传全流程）。技能文档：[qishui-upload.md](qishui-upload.md)。记忆结构见 [MEMORY.md](MEMORY.md) 与 `memory/`。更细的本地参考（`docs/suno-music-mv.md`、`docs/kids-poem-music-mv.md`）不入库，按需自行保留。
+
+英文说明：[README.en.md](README.en.md)。本项目为社区作品，与 Suno、汽水音乐及其母公司无官方关联。Suno 会员、平台账号与版权责任由使用者自行承担。

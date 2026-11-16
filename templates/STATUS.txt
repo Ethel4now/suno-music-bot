@@ -1,0 +1,20 @@
+project: <slug>-YYYYMMDD
+title: <歌名>
+brand: <品牌/系列>
+stage: inspiration | lyrics | style | generated | lrc | mv | delivered | uploaded
+
+clip_id: <8hex>
+song_url: <url or ->
+duration: <mm:ss>
+audio: audio/<title>-<8hex>.wav
+audio_md5: <md5>
+lrc: lrc/<title>-定稿.lrc
+mv: video/<title>-MV-v1-compat-720p.mp4
+mv_md5: <md5>
+
+encode_notes: <h264 yuv420p main -bf 0 aac faststart / 1280x720 / 25fps>
+delivery: <本地路径 or 资料包路径>
+
+upload: qishui | account:<账号标识> | submitted:<时间> | id:<曲目/草稿ID> | status:<状态> | url:<链接>
+
+next: <下一步>
